@@ -2,10 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Execute click method) {
             steps {
-                echo 'Hello World'
+                bat "python C:\\DevOps\\MySoftware\\clickmethod.py"
+            }
+        }
+            steps {
+                bat "python C:\\DevOps\\MySoftware\\welcomemethod.py"
             }
         }
     }
 }
+
+
+
